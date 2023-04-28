@@ -1,0 +1,5 @@
+CREATE TABLE booklist ( id INTEGER , name TEXT , rating INTEGER );
+
+INSERT INTO booklist VALUES (1,"happy couples",4);
+INSERT INTO booklist VALUES (2,"sad stories",5);
+INSERT INTO booklist VALUES (3,"fun stories",3);
