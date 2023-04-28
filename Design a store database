@@ -1,0 +1,19 @@
+CREATE TABLE skin_care ( id INTEGER PRIMARY KEY , name TEXT , quatity INTEGER , aisle INTEGER , price NUMERIC );
+INSERT INTO skin_care VALUES (1, "makeup remover", 40, 4, 5);
+INSERT INTO skin_care VALUES (2, "cleanser", 20, 6, 7);
+INSERT INTO skin_care VALUES (3, "toner", 50, 9, 10);
+INSERT INTO skin_care VALUES (4, "serum", 60, 1, 30);
+INSERT INTO skin_care VALUES (5, "acne spot", 30, 3, 10);
+INSERT INTO skin_care VALUES (6, "round cotton", 80, 2, 3);
+INSERT INTO skin_care VALUES (7, "essence", 20, 1, 15);
+INSERT INTO skin_care VALUES (8, "vitamin C", 90, 7, 20);
+INSERT INTO skin_care VALUES (9, "BHA liquid", 10, 9, 50);
+INSERT INTO skin_care VALUES (10, "moisturizer", 30, 10, 20);
+INSERT INTO skin_care VALUES (11, "vaselin", 100, 11, 1);
+INSERT INTO skin_care VALUES (12, "exfoliate", 30, 12, 11);
+INSERT INTO skin_care VALUES (13, "suncreen", 60, 13, 10);
+INSERT INTO skin_care VALUES (14, "eye cream", 5, 14, 30);
+INSERT INTO skin_care VALUES (15, "lip balm", 45, 15, 4);
+
+SELECT * FROM skin_care WHERE price < 50 ORDER BY price;
+SELECT SUM(quatity) FROM skin_care;
